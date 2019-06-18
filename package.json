@@ -1,0 +1,67 @@
+{
+  "name": "react-redux-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "serve": "NODE_ENV=development webpack-dev-server --config webpack/local.config.js",
+    "start": "npm run serve",
+    "build": "webpack --config webpack/${ENV}.config.js"
+  },
+  "jest": {
+    "testURL": "http://localhost:3535",
+    "setupTestFrameworkScriptFile": "./__tests__/setup/testSetup.js",
+    "testPathIgnorePatterns": [
+      "__tests__/setup/"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-styled-components": "^1.5.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "1.6.0",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-0": "6.24.1",
+    "babel-preset-stage-1": "6.24.1",
+    "babel-preset-stage-2": "6.24.1",
+    "babel-preset-stage-3": "6.24.1",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "enzyme": "^3.4.0",
+    "enzyme-adapter-react-16": "^1.2.0",
+    "enzyme-to-json": "^3.3.4",
+    "expect": "^23.4.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.4.2",
+    "jest-styled-components": "^6.2.1",
+    "mocha": "^5.2.0",
+    "react-addons-test-utils": "^15.6.2",
+    "react-test-renderer": "^16.5.2",
+    "redux-saga": "^1.0.1",
+    "style-loader": "^0.22.1",
+    "styled-components": "^3.4.1",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-merge": "^4.1.3"
+  },
+  "dependencies": {
+    "@material-ui/core": "^1.4.3",
+    "@material-ui/icons": "^2.0.3",
+    "axios": "^0.19.0",
+    "connected-react-router": "^6.3.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-redux": "^6.0.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.2.2",
+    "redux": "^4.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
