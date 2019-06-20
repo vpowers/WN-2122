@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
     context: __dirname,
-    entry: ['../src/index.js'],
+    entry: ['babel-polyfill', '../src/index.js'],
     output: {
       path: path.join(__dirname, '../dist'),
       filename: '[name].bundle.js'
@@ -27,7 +27,8 @@ module.exports = {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: '../index.html'
+        template: '../index.html',
+        inject: false
       })
     ]
 };
